@@ -16,7 +16,7 @@ assets/password.js:
 assets/theme.js:
   development: 2017-10-21T12:00:29-04:00   57d7c482889ca38c7e394a3bdb96daa2
 assets/theme.scss.liquid:
-  development: 2017-10-22T12:40:13-04:00   19fa0eed591746a6c1d16286ca77c887
+  development: 2017-10-22T19:07:58-04:00   ebefeb024d632d0e365386700d74763e
 assets/vendor.js:
   development: 2017-10-21T12:00:30-04:00   cb7c4217c9b6feb844647b361accfe6c
 config/settings_data.json:
@@ -55,10 +55,20 @@ sections/collection-template.liquid:
   development: 2017-10-21T12:00:28-04:00   3c635f9290cde0a0c41cc9372d63d298
 sections/collection.liquid:
   development: 2017-10-21T12:00:28-04:00   2b354ddc56741c41be0ee62a912b4ce4
-sections/custom-content.liquid:
-  development: 2017-10-21T12:00:28-04:00   9abed1c1562136145fb81ea24137c7ac
 sections/delune-companies-grid.liquid:
-  development: 2017-10-22T12:36:49-04:00   fe2f4d2bdf0ae4b3b8d251079fdabeed
+  development: 2017-10-22T15:47:32-04:00   704d3943ebca1728a20c77b99b1adacd
+sections/delune-custom-bottle.liquid:
+  development: 2017-10-22T14:17:48-04:00   fde621851c285e951f1a3ff855ab15de
+sections/delune-custom-ingredients.liquid:
+  development: 2017-10-22T15:51:28-04:00   b94360932e206e874b776b50ee5f926c
+sections/delune-feature-row-1.liquid:
+  development: 2017-10-22T13:39:09-04:00   bde08223943123aaf565f941cabf86e4
+sections/delune-footer.liquid:
+  development: 2017-10-22T12:50:34-04:00   2e76a39a97c218a38361715d124e8c39
+sections/delune-logo-list.liquid:
+  development: 2017-10-22T19:10:03-04:00   898c4f31a3a06a6559e001fbf5959260
+sections/delune-periodical.liquid:
+  development: 2017-10-22T12:45:17-04:00   e5e3b7216b1f6352652611995b8091f7
 sections/delune-section-title.liquid:
   development: 2017-10-21T16:07:50-04:00   2d6ddfb44557a1f0792a6401d73de023
 sections/feature-columns.liquid:
@@ -70,7 +80,7 @@ sections/featured-blog.liquid:
 sections/featured-product.liquid:
   development: 2017-10-21T12:00:28-04:00   9c2cd13b0e7e12c4468426c6119eb30e
 sections/footer.liquid:
-  development: 2017-10-21T12:00:28-04:00   3f2c48b4aa967ff56855ef2c6d7339b7
+  development: 2017-10-22T12:47:47-04:00   4e24415c1d1f6610a35d3e9009feda0f
 sections/header.liquid:
   development: 2017-10-21T13:30:33-04:00   dc26720894fec1a1806f582d084adccf
 sections/hero.liquid:
@@ -109,6 +119,8 @@ snippets/collection-grid-item.liquid:
   development: 2017-10-21T12:00:30-04:00   209c8abd3531c95e503636cc520dd9ca
 snippets/comment.liquid:
   development: 2017-10-21T12:00:30-04:00   50406c82467014e1bbe15a62685b2536
+snippets/delune-collection-grid-item.liquid:
+  development: 2017-10-22T15:54:39-04:00   f02d2541196f4a55376bf88b581be8d3
 snippets/google-fonts.liquid:
   development: 2017-10-21T12:00:30-04:00   377ddc183ac7882100f47299bb8e0467
 snippets/icon-amazon_payments.liquid:
@@ -261,6 +273,8 @@ templates/list-collections.liquid:
   development: 2017-10-21T12:00:31-04:00   d42f6d6957169811896f646709d353d9
 templates/page.contact.liquid:
   development: 2017-10-21T12:00:31-04:00   854f7fd02acf64bc9ce31bfd6994f791
+templates/page.delune-product.liquid:
+  development: 2017-10-22T18:50:32-04:00   8510fcf350f7e87edaecdc515f03b6d3
 templates/page.liquid:
   development: 2017-10-21T12:00:31-04:00   26f97d3355078de5c6678ed3b34ad7f6
 templates/password.liquid:

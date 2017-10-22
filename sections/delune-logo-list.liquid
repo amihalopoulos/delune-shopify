@@ -1,0 +1,84 @@
+<div id="delune-companies-grid">
+  {% if section.blocks.size > 0 %}
+    {% for block in section.blocks %}
+      {% if block.settings.image != blank %}
+        <div class="delune-list-item-wrapper">
+          <div class="delune-ingredient-square lazyload{% unless forloop.first == true %} lazypreload{% endunless %} js"
+               data-bgset="{% include 'bgset', image: block.settings.image %}"
+               style="{% if forloop.first == true %} background-image: url('{{ block.settings.image | img_url: '300x300' }});{% endif %}">
+          </div>
+
+          <div class="delune-ingredient-title">{{ block.settings.title }}</div>
+          <div class="delune-ingredient-description">{{ block.settings.description }}</div>
+        </div>
+      {% endif %}
+
+    {% endfor %}
+
+  {% endif %}
+
+  {% comment %}{% endcomment %}
+
+  {% comment %}{% endcomment %}
+
+</div>
+{% schema %}
+  {
+    "name": "DeLune Ingredients Grid",
+    "class": "delune-companies-grid-section",
+    "settings": [
+      {
+        "id": "text-box",
+        "type": "text",
+        "label": "Heading",
+        "default": "Title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Company Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Text",
+            "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Author",
+            "default": "Author's name"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 15,
+    "presets": [
+      {
+        "name": "Ingredients List Grid",
+        "category": "Custom DeLune",
+        "blocks": [
+          {
+            "type": "image"
+          },
+          {
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
