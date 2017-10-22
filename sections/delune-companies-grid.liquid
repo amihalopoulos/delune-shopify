@@ -1,0 +1,65 @@
+<div id="delune-companies-grid">
+  {% if section.blocks.size > 0 %}
+    {% for block in section.blocks %}
+      {% if block.settings.image != blank %}
+
+        <div class="delune-company-square lazyload{% unless forloop.first == true %} lazypreload{% endunless %} js"
+             data-bgset="{% include 'bgset', image: block.settings.image %}"
+             style="{% if forloop.first == true %} background-image: url('{{ block.settings.image | img_url: '300x300' }});{% endif %}">
+        </div>
+
+      {% endif %}
+
+    {% endfor %}
+
+  {% endif %}
+
+</div>
+{% schema %}
+  {
+    "name": "DeLune Companies Grid",
+    "class": "delune-companies-grid-section",
+    "settings": [
+      {
+        "id": "text-box",
+        "type": "text",
+        "label": "Heading",
+        "default": "Title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Company Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 4,
+    "presets": [
+      {
+        "name": "Companies List Grid",
+        "category": "Custom DeLune",
+        "blocks": [
+          {
+            "type": "image"
+          },
+          {
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
