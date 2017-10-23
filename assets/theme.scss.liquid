@@ -5825,23 +5825,30 @@ $toolbar-height-small: 46px;
   .delune-left-border{
     border-bottom: 2px solid #EFEDED;
     height: 37px;
-    width: 40%;
-    float: left;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    // float: left;
   }
+  .delune-right-border{
+    display: none;
+  }
+
   .delune-section-title-text{
     float: left;
-    width: 20%;
+    width: auto;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    padding: 0 10px;
     font-family: Domaine Display;
     line-height: normal;
     font-size: 60px;
     text-align: center;
     color: #4D4D4D;
-  }
-  .delune-right-border{
-    border-bottom: 2px solid #EFEDED;
-    height: 37px;
-    width: 40%;
-    float: left;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
 @media screen and (max-width: 400px) {
@@ -5851,23 +5858,16 @@ $toolbar-height-small: 46px;
   .delune-left-border{
     border-bottom: 2px solid #EFEDED;
     height: 1.5em;
-    width: 30%;
     float: left;
   }
   .delune-section-title-text{
     float: left;
-    width: 40%;
-    font-family: Domaine Display;
-    line-height: normal;
     font-size: 2em;
     text-align: center;
     color: #4D4D4D;
   }
   .delune-right-border{
-    border-bottom: 2px solid #EFEDED;
-    height: 1.5em;
-    width: 30%;
-    float: left;
+    display: none;
   }
 }
 }
