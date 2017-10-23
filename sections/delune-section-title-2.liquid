@@ -1,0 +1,30 @@
+<div id="delune-section-title">
+  <div class="delune-left-border"></div>
+  <div class="delune-section-title-text"> {{ section.settings.text-box }} </div>
+  <div class="delune-right-border"></div>
+</div>
+{% schema %}
+  {
+    "name": "DeLune Section Title",
+    "settings": [
+      {
+        "id": "text-box",
+        "type": "text",
+        "label": "Heading",
+        "default": "Title"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Title Section",
+        "category": "Custom DeLune"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
